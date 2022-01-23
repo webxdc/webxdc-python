@@ -28,7 +28,7 @@ just go to the root of the project and run this command:
 python -m http.server
 ```
 
-then open in your browser the URL that is displayed in the shell. 
+then open in your browser the URL that is displayed in the shell.
 
 ## Packaging
 
