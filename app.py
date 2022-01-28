@@ -6,7 +6,7 @@ def sendMsg():
         window.webxdc.sendUpdate(
             {
                 "payload": {
-                    "sender": window.webxdc.selfName(),
+                    "sender": window.webxdc.selfName,
                     "text": text,
                 }
             },
@@ -35,7 +35,7 @@ def _onload():
     )
 
     window.webxdc.setUpdateListener(receiveUpdate)  # process incoming messages
-    window.webxdc.getAllUpdates().forEach(receiveUpdate)  # restore app state
+    window.webxdc.getAllUpdates().then(lambda updates: updates.forEach(receiveUpdate))  # restore app state
 
 
 window.onload = _onload
