@@ -34,8 +34,7 @@ def _onload():
         + '<p id="msgs"></p>'
     )
 
-    window.webxdc.setUpdateListener(receiveUpdate)  # process incoming messages
-    window.webxdc.getAllUpdates().then(lambda updates: updates.forEach(receiveUpdate))  # restore app state
+    window.webxdc.setUpdateListener(receiveUpdate, 0)  # process incoming messages
 
 
 window.onload = _onload
