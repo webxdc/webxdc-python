@@ -11,6 +11,11 @@ used, to install it and also other tools to minify/optimize the final webxdc, ru
  python -m pip install -r ./requirements.txt
 ```
 
+## Developing
+
+The entry point of your app is the `app.py` file, you can create python packages
+in the same folder and then import them from `app.py`
+
 ## Building
 
 To package your Webxdc:
