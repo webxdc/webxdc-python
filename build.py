@@ -143,7 +143,7 @@ if __name__ == "__main__":
             os.remove(name)
 
     if args.debug:
-        files.append("eruda.min.js")
+        files.append("eruda.js")
 
     if os.path.exists("assets"):
         shutil.copytree("assets", "build/assets")
