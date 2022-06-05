@@ -1,3 +1,7 @@
+def about():
+    window.location = "./pages/about.html"
+
+
 def sendMsg():
     textfield = document.getElementById("input")
     textfield.focus()
@@ -31,6 +35,7 @@ def _onload():
     body.innerHTML += (
         '<input id="input" type="text" onkeydown="app.onInput();"/>'
         + '<button onclick="app.sendMsg();">Send</button>'
+        + ' <button onclick="app.about();">About</button>'
         + '<p id="msgs"></p>'
     )
 
