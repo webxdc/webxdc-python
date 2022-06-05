@@ -1,6 +1,6 @@
 # Webxdc development with Python
 
-This is a project template to develop Webxdc apps with the Python programming language!
+This is a template project to develop Webxdc apps with the Python programming language!
 
 ## Requirements
 
