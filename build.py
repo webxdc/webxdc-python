@@ -141,6 +141,7 @@ if __name__ == "__main__":
     for name in os.listdir():
         if os.path.isfile(name) and name.endswith(".xdc"):
             os.remove(name)
+    os.makedirs("build")
 
     if args.debug:
         files.append("eruda.js")
